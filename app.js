@@ -7,7 +7,7 @@ var express = require('express'),
 		session       = require('express-session'),
 		LocalStrategy = require('passport-local').Strategy,
 		passport      = require('passport'),
-		// db						= require('./db.js'),
+		db						= require('./db.js'),
 		methodOverride = require('method-override');
 
 app.set('view engine', 'ejs');
@@ -60,3 +60,55 @@ passport.use(localStrategy);
 app.get('/', function(req, res) {
 	res.render('index', { user: req.user });
 });
+
+// User routes
+app.get('/users/new', function(req, res) {
+	res.render('users/new');
+});
+
+app.post('/users', function(req, res) {
+	db.query('INSERT INTO users (username, email, password) VALUES ($1, $2, $3)', [req.body.username, req.body.email, req.body.password], function(err, dbRes) {
+			if (!err) {
+				res.redirect('/sessions/new');
+			}
+	});
+});
+
+// Session routes
+app.get('/sessions/new', function(req, res) {
+	res.render('sessions/new');
+});
+
+app.post('/sessions', passport.authenticate('local', 
+  {failureRedirect: '/sessions/new'}), function(req, res) {
+    res.redirect('/');
+});
+
+app.delete('/sessions', function(req, res) {
+	req.logout();
+	res.redirect('/');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
