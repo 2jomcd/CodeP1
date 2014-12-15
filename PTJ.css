@@ -29,27 +29,27 @@ h2 {
     background-color: #999999;
 }
 
-button#xbutton{
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dogbutton {
     margin: 0px 40px 0 0;
     font: bold 36px sans-serif;
     background-color: #FFEDBD;
 }
 
-button#obutton{
+#catbutton {
     margin: 0px 0 0 40px;
     font: bold 36px sans-serif;
     background-color: #FFEDBD;
 
 }
-
-button#resetbutton{
+ 
+#resetbutton {
     margin: 40px 0 0 0px;
     font: bold 36px sans-serif;
     background-color: #FFEDBD;
 
-}
-
-div#result {
-    margin: 0.5em;
-    font: 24px sans-serif;
 }
