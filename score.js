@@ -9,13 +9,13 @@ var c6 = 			document.querySelector("#c6");
 var c7 = 			document.querySelector("#c7");
 var c8 = 			document.querySelector("#c8");
 var c9 = 			document.querySelector("#c9");
-var dogButton =  	document.querySelector("#dogbutton");
-var catButton = 	document.querySelector("#catbutton");
+// var dogButton =  	document.querySelector("#dogbutton");
+// var catButton = 	document.querySelector("#catbutton");
 var count = 0;
 
 var mark = "X";
-dogButton.onclick = function() {mark = "X"};
-catButton.onclick = function() {mark = "O"};
+// dogButton.onclick = function() {mark = "X"};
+// catButton.onclick = function() {mark = "O"};
 
 // init tally's for each win vector
 
@@ -91,9 +91,9 @@ c9.onclick = function() {
 checkResult = function() {
 if (mark==="X") {mark="O"} else {mark="X"};
 if (row1===3||row2===3||row3===3||col1===3||col2===3||col3===3||dia1===3||dia2===3) {
-	alert("DOG WINS!"); gameReset()}
+	alert("DOG WINS!")}
 else if (row1===15||row2===15||row3===15||col1===15||col2===15||col3===15||dia1===15||dia2===15) { 
-	alert("CAT WINS!"); gameReset()}
+	alert("CAT WINS!")}
 else if (count===9) {alert("DRAW!  GAME OVER.")}
 }
 

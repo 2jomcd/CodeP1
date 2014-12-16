@@ -1,55 +1,44 @@
+body {
+    align: 0 auto;
+}
 
-body > * {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: sans-serif;
+div img {
+    max-width: 100%;
 }
 
 h1 {
+    text-align: center;
     font: bold 40px sans-serif;
-    color: #930;
+    color: black;
 }
 
-h2 {
-    font: bold 20px sans-serif;
-    color: #930;
+#grids {
+    height: 800;
+    width: 1200;
+}
+
+#grid1 {
+    margin: 0 50px 0 350px;
+    float: left;
+    vertical-align: middle;
+    background-color: #dddddd;
+}
+
+#grid2 {
+    margin: 0 100px 0 50px;
+    float: left;
+    vertical-align: middle;
+    background-color: #FFEDBD;
 }
 
 .cell {
     width: 200px;
-    height: 200px;
-    text-align: center;
-    vertical-align: middle;
-    font: bold 48px sans-serif;
-    background-color: #FFEDBD;
+    height: 150px;
+    border: 5px solid black;
 }
 
-.clicked {
-    background-color: #999999;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#dogbutton {
-    margin: 0px 40px 0 0;
-    font: bold 36px sans-serif;
-    background-color: #FFEDBD;
-}
-
-#catbutton {
-    margin: 0px 0 0 40px;
-    font: bold 36px sans-serif;
-    background-color: #FFEDBD;
-
-}
- 
-#resetbutton {
-    margin: 40px 0 0 0px;
-    font: bold 36px sans-serif;
-    background-color: #FFEDBD;
-
+.av {
+    width: 200px;
+    height: 150px;
+    border: 5px solid black;
 }

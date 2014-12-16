@@ -1,3 +1,5 @@
+
+// Google server API key for IP localhost = 127.0.0.1  API key = AIzaSyASHiwuhRi_LlHm4Bjmi_05yh72uN91HyM
 var express = require('express'),
 		ejs 		= require('ejs'),
 		app			= express(),
