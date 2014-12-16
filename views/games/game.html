@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+</html>
+<head>
+    <title>Pic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="./game.css" />
+    <script src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="display.js" defer></script>
+    <script type="text/javascript" src="score.js" defer></script>
+</head>
+
+<body>
+
+<h1>Pic Tac Toe with Google Images</h1>
+	<% if (user) { %>
+		<form action="/sessions?_method=DELETE" method="POST">
+			<input type="submit" value="Log out">
+		</form>
+	<% } %>
+
+<div id="grids">
+<table id="grid1">
+<tr>
+<td class="av" id="a1">&nbsp;</td>
+<td class="av" id="a2">&nbsp;</td>
+<td class="av" id="a3">&nbsp;</td>
+</tr>
+<tr>
+<td class="av" id="a4">&nbsp;</td>
+<td class="av" id="a5">&nbsp;</td>
+<td class="av" id="a6">&nbsp;</td>
+</tr>
+<tr>
+<td class="av" id="a7">&nbsp;</td>
+<td class="av" id="a8">&nbsp;</td>
+<td class="av" id="a9">&nbsp;</td>
+</tr>
+</table>
+
+<table id="grid2">
+<tr>
+<td class="cell" id="c1">&nbsp;</td>
+<td class="cell" id="c2">&nbsp;</td>
+<td class="cell" id="c3">&nbsp;</td>
+</tr>
+<tr>
+<td class="cell" id="c4">&nbsp;</td>
+<td class="cell" id="c5">&nbsp;</td>
+<td class="cell" id="c6">&nbsp;</td>
+</tr>
+<tr>
+<td class="cell" id="c7">&nbsp;</td>
+<td class="cell" id="c8">&nbsp;</td>
+<td class="cell" id="c9">&nbsp;</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

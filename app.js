@@ -37,7 +37,7 @@ passport.deserializeUser(function(id, done) {
 });
 
 app.listen(5000, function() {
-	console.log('Server is up!');
+	console.log('Server LH5K is up!');
 });
 
 var localStrategy = new LocalStrategy(
@@ -83,12 +83,16 @@ app.get('/sessions/new', function(req, res) {
 
 app.post('/sessions', passport.authenticate('local', 
   {failureRedirect: '/sessions/new'}), function(req, res) {
-    res.redirect('/');
+    res.redirect('/play');
 });
 
 app.delete('/sessions', function(req, res) {
 	req.logout();
 	res.redirect('/');
+});
+
+app.get('/play', function(req, res) {
+	res.render('games/game');
 });
 
 

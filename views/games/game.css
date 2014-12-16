@@ -1,0 +1,42 @@
+body {
+    align: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font: bold 40px sans-serif;
+    color: black;
+}
+
+#grids {
+    height: 800;
+    width: 1200;
+}
+
+#grid1 {
+    margin: 0 50px 0 100px;
+    float: left;
+    vertical-align: middle;
+    background-color: #dddddd;
+}
+
+#grid2 {
+    margin: 0 100px 0 50px;
+    float: left;
+    vertical-align: middle;
+    background-color: #FFEDBD;
+}
+
+.cell {
+    width: 200px;
+    height: 150px;
+    border: 5px solid black;
+    background-size: 100%;
+}
+
+.av {
+    width: 200px;
+    height: 150px;
+    border: 5px solid black;
+    background-size: 100%;
+}

@@ -1,0 +1,23 @@
+pictacjoe=# SELECT * FROM users;
+
+ id | username |      email       | password 
+----+----------+------------------+----------
+  1 | tuser1   | tuser1@gmail.com | 111
+  2 | tuser2   | tuser2@gmail.com | 222
+  3 | tuser3   | tuser3@gmail.com | 333
+(3 rows)
+
+pictacjoe=# INSERT into pics
+pictacjoe-# (picname, picloc, picowner)
+pictacjoe-# VALUES
+pictacjoe-# ('boat.png','./views/pics/boat.png',3);
+INSERT 0 1
+
+pictacjoe=# SELECT * FROM pics;
+
+ id |  picname  |         picloc         | picowner 
+----+-----------+------------------------+----------
+  1 | chase.png | ./views/pics/chase.png |        1
+  2 | scout.png | ./views/pics/scout.png |        2
+  3 | boat.png  | ./views/pics/boat.png  |        3
+(3 rows)
