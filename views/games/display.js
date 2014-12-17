@@ -4,7 +4,7 @@ var turn = 0;
 var picpre = "url(picsLib/mix/im";
 var picsuf = ")";
 var choosepic = function()	{
-	var randnum = Math.floor((Math.random() * 20) + 1);
+	var randnum = Math.floor((Math.random() * 200) + 101);
 	var aPic = picpre+randnum+picsuf;
 	return aPic
 };
