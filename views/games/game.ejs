@@ -11,16 +11,29 @@
 
 <body>
 		<h1>Pic Tac Toe with Google Images</h1>
-		<h2>Search and then choose your avatar</h2>
+		<h2>Choose your avatar</h2>
 
 	<div id="container">
 
 	<div id=search>
+		<script>
+		  (function() {
+		    var cx = '004819069381174499627:bxprxh2i0gw';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//www.google.com/cse/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+	<gcse:search></gcse:search>
 
 	</div>
 
 	<div class="box" id="p1">
-		<h2> Player 1</h2>
+		<h2> <%= user %> </h2>
 	<table>
 		<tr>
 			<td class="side" id="p11">&nbsp;</td>
@@ -49,7 +62,7 @@
 	</div>
 
 	<div class="box" id="p2">
-		<h2> Player 2</h2>
+		<h2> Guest </h2>
 		<table>
 		<tr>
 			<td class="side" id="p21">&nbsp;</td>

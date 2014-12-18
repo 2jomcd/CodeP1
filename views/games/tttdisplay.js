@@ -1,6 +1,5 @@
 $(document).ready(function() {
 var turn = 0;
-var gamestart = false;
 var picpre = "url(picsLib/mix/im";
 var picsuf = ".jpg)";
 var choosepic = function()	{
@@ -44,8 +43,10 @@ $(".av").click(function(e)  {
 			$('.av').css('background-image', 'none');
 		}, 500);
 	};
-	return Pic1, Pic2, gamestart;
+	return Pic1, Pic2;
 });
+
+
 
 // display images
 $(".av").click(function(e) {

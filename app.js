@@ -66,7 +66,11 @@ app.get('/', function(req, res) {
 
 // User routes
 app.get('/users/new', function(req, res) {
-	res.render('users/new');
+	if (!req.user) {
+		res.render('users/new');	
+	} else {
+		res.redirect('/');
+	}
 });
 
 app.post('/users', function(req, res) {
@@ -92,8 +96,21 @@ app.delete('/sessions', function(req, res) {
 	res.redirect('/');
 });
 
-app.get('/play', function(req, res) {
-	res.render('games/game');
+app.get('/play', function(req, res) { 
+	if (req.user) {
+		res.render('games/game', { user: req.user.username} )
+	} else {
+		res.redirect('/sessions/new');
+	}
+});
+
+app.post('/pics', function(req, res) {
+	db.query('INSERT INTO pics (picname, picloc, picowner) VALUES ($1, $2, $3)', 
+		[req.body.XYZ, req.body.XYZ, req.body.XYZ], function(err, dbRes) {
+			if (!err) {
+				res.redirect('/games/game');
+			}
+	});
 });
 
 // app.post('/play', function(req, res) {

@@ -120,10 +120,10 @@ c9.onclick = function() {
 // check for winner or 9 boxes used
 checkResult = function() {
 if (row1===3||row2===3||row3===3||col1===3||col2===3||col3===3||dia1===3||dia2===3) {
-	setTimeout(function(){alert('PLAYER 1 WINS!')}, 200)
+	setTimeout(function(){alert('HOST WINS!')}, 200)
 }
 else if (row1===15||row2===15||row3===15||col1===15||col2===15||col3===15||dia1===15||dia2===15) { 
-	setTimeout(function(){alert('PLAYER 2 WINS!')}, 200) 
+	setTimeout(function(){alert('GUEST WINS!')}, 200) 
 }
 else if (count===9) {
 	setTimeout(function(){alert('DRAW GAME OVER')}, 200)
