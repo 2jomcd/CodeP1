@@ -1,6 +1,6 @@
 $(document).ready(function() {
 var turn = 0;
-
+var gamestart = false;
 var picpre = "url(picsLib/mix/im";
 var picsuf = ")";
 var choosepic = function()	{
@@ -34,12 +34,13 @@ $(".av").click(function(e)  {
 	else if (player_count > 1)  {
 		Pic2 = $(this).css('background-image');
 		$('#p21').css('background-image', Pic2);
+		gamestart = true;
 		//clear board
 		setTimeout(function() {
 			$('.av').css('background-image', 'none');
 		}, 500);
 	};
-	return Pic1, Pic2;
+	return Pic1, Pic2, gamestart;
 });
 
 // display images
