@@ -1,0 +1,61 @@
+
+#container {
+    margin-left: 150px;
+}
+
+h1 {
+    text-align: center;
+    font: bold 40px sans-serif;
+    color: black;
+}
+
+#begin {
+    font: bold 24px sans-serif;
+    margin: 0 0 0 800px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font: bold 24px sans-serif;
+    color: red;
+}
+
+.av {
+    background-color: #dddddd;
+    width: 200px;
+    height: 150px;
+    background-size: 100%;
+    border: 5px solid black;
+}
+
+#a1 #a2 #a4 #a5 #a6 #a7 {
+    border-right: 5px solid black;
+}
+
+#a1 #a2 #a3 #a4 #a5 #a6 {
+    border-bottom: 5px solid black;
+}
+
+
+.side {
+    background-color: #dddddd;
+    width: 200px;
+    height: 150px;
+    border: 5px solid black;
+    background-size: 100%;
+}
+
+.box  {
+    float:left;
+    display: inline-block;
+    margin: 50px;
+}
+
+#grid1 {
+
+}
+
+#p1  #p2 {
+
+}

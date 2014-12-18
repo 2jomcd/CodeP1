@@ -13,6 +13,7 @@ var express = require('express'),
 		methodOverride = require('method-override');
 
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/views/games'));
 app.use(methodOverride('_method'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':true}));
@@ -36,8 +37,8 @@ passport.deserializeUser(function(id, done) {
 	});
 });
 
-app.listen(5000, function() {
-	console.log('Server LH5K is up!');
+app.listen(8000, function() {
+	console.log('Server LH8K is up!');
 });
 
 var localStrategy = new LocalStrategy(
