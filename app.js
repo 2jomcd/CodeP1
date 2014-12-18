@@ -37,8 +37,8 @@ passport.deserializeUser(function(id, done) {
 	});
 });
 
-app.listen(8000, function() {
-	console.log('Server LH8K is up!');
+app.listen(7000, function() {
+	console.log('Server LH7K is up!');
 });
 
 var localStrategy = new LocalStrategy(
@@ -96,7 +96,13 @@ app.get('/play', function(req, res) {
 	res.render('games/game');
 });
 
-
+// app.post('/play', function(req, res) {
+// 	db.query(Google Images API, function(err, dbRes) {
+// 			if (!err) {
+// 				res.redirect('/play');
+// 			}
+// 	});
+// });
 
 
 
