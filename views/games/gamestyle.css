@@ -21,12 +21,13 @@ h2 {
     color: red;
 }
 
-/*#search {
+#search {
+    width: 600px;
     margin: 0 auto;
     text-align: center;
     font: bold 24px sans-serif;
     color: red;
-};*/
+}
 
 .av {
     background-color: #dddddd;

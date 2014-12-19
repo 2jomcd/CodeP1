@@ -37,7 +37,7 @@ passport.deserializeUser(function(id, done) {
 	});
 });
 
-app.listen(7000, function() {
+app.listen(process.env.PORT || 7000, function() {
 	console.log('Server LH7K is up!');
 });
 
