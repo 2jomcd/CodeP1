@@ -1,0 +1,7 @@
+write api in app.js express
+create page to search for images
+let server take images and put them into an array
+render array into images page
+select images to use as avatars
+save iamges to database
+push images to game page
